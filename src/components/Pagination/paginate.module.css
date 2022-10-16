@@ -1,0 +1,24 @@
+.paginateContainer {
+	display: flex;
+	place-content: center;
+	flex-wrap: wrap;
+	margin: 3rem 0 2rem 0;
+}
+.paginateButton {
+	margin: 1rem;
+	padding: 0.5rem 1.5rem;
+	border: 2px solid #ffba52;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.active {
+	color: rgb(255, 255, 255);
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+}

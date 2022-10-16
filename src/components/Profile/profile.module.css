@@ -1,0 +1,161 @@
+.container {
+	text-align: center;
+	margin: 2.3rem 0 0 0;
+}
+
+.imgContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+.H1top {
+	color: #42433f;
+}
+
+.formContainer {
+	margin: 2rem 0 5rem 0;
+}
+
+.deactivateContainer,
+.updateContainer {
+	margin: 2rem 0 5rem 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 5rem 0 20rem;
+}
+
+.formContainer .input {
+	border-radius: 5px;
+	padding: 1rem 5rem;
+	border: 2px solid #ffba52;
+}
+.rowOne,
+.updateContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+	gap: 1rem;
+}
+
+.btnContainer {
+	margin: 0 0 3rem 0;
+}
+
+.dbLeft {
+	width: 60%;
+	font-weight: bolder;
+}
+.dbRight {
+	width: 40%;
+}
+.dbRight button {
+	padding: 1rem;
+	background-color: #fff;
+	color: rgb(255, 0, 0);
+	font-weight: bolder;
+	transition: all 0.5s;
+	border: 2px solid #ffba52;
+	border-radius: 5px;
+}
+
+.dbRight button:hover {
+	background-color: #ff0000;
+	color: #ffffff;
+}
+.updateMainContainer {
+	margin: 5rem 0 0 0;
+}
+.updateContainer .input {
+	border-radius: 5px;
+	padding: 1rem 3rem;
+	border: 2px solid #ffba52;
+}
+
+.formContainer .input::placeholder {
+	text-align: center;
+	font-weight: bolder;
+	color: #ff0000;
+}
+
+@media (max-width: 425px) {
+	.rowOne,
+	.rowTwo {
+		margin: 1.5rem 0;
+		display: block;
+	}
+
+	.colTwo {
+		margin: 1rem;
+	}
+	.updateContainer,
+	.deactivateContainer {
+		margin: 1rem;
+		padding: 1rem;
+		font-size: 1rem;
+		display: block;
+		text-align: center;
+	}
+	.formContainer .input {
+		padding: 1rem 2rem;
+	}
+	.dbLeft {
+		width: 100%;
+		font-weight: bolder;
+	}
+	.dbRight {
+		width: 100%;
+		margin: 1.5rem 0 0 0;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+	.rowOne,
+	.rowTwo {
+		margin: 1rem;
+	}
+	.updateContainer,
+	.rowOne,
+	.deactivateContainer {
+		margin: 1rem;
+		padding: 1rem;
+		display: block;
+	}
+	.colTwo {
+		margin: 1rem;
+	}
+	.dbLeft {
+		width: 100%;
+		font-weight: bolder;
+	}
+	.dbRight {
+		width: 100%;
+		margin: 1.5rem 0 0 0;
+	}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+	.rowOne,
+	.rowTwo {
+		margin: 1rem;
+	}
+
+	.updateContainer,
+	.deactivateContainer {
+		margin: 1rem;
+		padding: 1rem;
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.rowOne {
+		margin: 1rem;
+	}
+
+	.rowTwo {
+		margin: 0 9rem;
+	}
+}

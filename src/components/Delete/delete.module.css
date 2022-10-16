@@ -1,0 +1,115 @@
+.content {
+	margin: 3rem 0 0 0;
+	padding: 0 25rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+.updateMainContainer {
+	text-align: center;
+	padding: 5rem 0 0 0;
+	font-weight: bolder;
+	margin: 0 0 10rem 0;
+}
+.alert {
+	color: #f8a426;
+}
+.btnContainer {
+	margin: 2.5rem 0 0 0;
+}
+.btnContainer .button {
+	margin: 0 0 0 1rem;
+}
+.button {
+	padding: 0.85rem;
+	font-weight: bolder;
+	background-color: #fff;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	transition: all 0.2s;
+	border: 2px solid #000000;
+	border-radius: 8px;
+}
+.button:hover {
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+	color: #fff;
+	border: 2px solid #ffba52;
+}
+.deleteOutput {
+	margin: 4rem 0 0 0;
+	color: #00ff00;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 1.5rem;
+	background-color: #000000;
+	padding: 2.5rem 0;
+}
+
+@media (max-width: 425px) {
+	.content {
+		margin: 1rem 0;
+		padding: 0 0.5rem;
+	}
+
+	.updateMainContainer {
+		padding: 3rem 0 0 0;
+	}
+
+	.btnContainer {
+		margin: 2.5rem 0 0 0;
+	}
+	.btnContainer .button {
+		margin: 1rem 1.5rem;
+		width: 85%;
+		display: block;
+	}
+
+	.deleteOutput {
+		margin: 2rem 0;
+	}
+}
+@media (min-width: 426px) and (max-width: 768px) {
+	.content {
+		margin: 1rem 0;
+		padding: 0 0.5rem;
+	}
+
+	.updateMainContainer {
+		padding: 3rem 0 0 0;
+	}
+
+	.btnContainer {
+		margin: 2.5rem 0 0 0;
+	}
+	.btnContainer .button {
+		margin: 1rem 12rem;
+		width: 50%;
+		display: block;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+	.content {
+		margin: 3rem 0;
+		padding: 0 2rem;
+	}
+
+	.updateMainContainer {
+		padding: 3rem 0 0 0;
+	}
+
+	.btnContainer {
+		margin: 2.5rem 0 0 0;
+	}
+	.btnContainer .button {
+		margin: 1rem;
+		width: 30%;
+	}
+}

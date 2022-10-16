@@ -1,0 +1,104 @@
+.isActive {
+	background-color: rgba(0, 0, 0, 0.788);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	overflow: hidden;
+	transition: 0.8s all ease-in-out;
+	z-index: 1000;
+}
+
+.isClosed {
+	background-color: rgba(0, 0, 0, 0.788);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: -800px;
+	min-height: 100%;
+	overflow: hidden;
+	transition: 0.8s all ease-in-out;
+	z-index: 1000;
+}
+
+.navContainer {
+	margin: 12rem 0;
+	padding: 0.7rem 8rem;
+	color: #fff;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+	border-top: 3px solid #ffba52;
+	border-bottom: 3px solid #ffba52;
+}
+
+.navContainer .ul {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	margin: 0.5rem;
+}
+
+.navContainer .li {
+	text-decoration: none;
+	color: #fff;
+	margin: 2.5rem 0;
+}
+
+.navContainer .li:hover,
+.navContainer .active {
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+	transition: all 0.3s;
+	color: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+.SidebarClose {
+	position: absolute;
+	top: 9%;
+	right: 5%;
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+.navbarRight {
+	width: 100%;
+	padding: 0.5rem 3.5rem;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ffba52;
+}
+
+.navbarRight:hover {
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+	cursor: pointer;
+	border: none;
+}
+
+@media (max-width: 768px) {
+	.navContainer {
+		padding: 0.7rem 2.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.navContainer {
+		display: none;
+	}
+}

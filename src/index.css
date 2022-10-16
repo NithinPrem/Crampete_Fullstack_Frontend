@@ -1,0 +1,68 @@
+html {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+::selection {
+	color: #ffba52;
+	background: #000000;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	height: 150px;
+	background: rgb(92, 92, 92);
+	border-radius: 80px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: #808080;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+
+body {
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+img,
+video {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+/* .beauty {
+	background-image: linear-gradient(
+		301deg,
+		hsl(270deg 100% 7%) 0%,
+		hsl(133deg 3% 40%) 32%,
+		hsl(112deg 5% 55%) 38%,
+		hsl(107deg 10% 67%) 41%,
+		hsl(106deg 18% 78%) 44%,
+		hsl(104deg 34% 87%) 54%,
+		hsl(104deg 100% 95%) 100%
+	);
+*************************************************
+	background-image: linear-gradient(
+  330deg,
+  hsl(315deg 73% 10%) 0%,
+  hsl(354deg 61% 26%) 16%,
+  hsl(8deg 72% 40%) 30%,
+  hsl(17deg 95% 50%) 42%,
+  hsl(26deg 100% 58%) 52%,
+  hsl(37deg 100% 64%) 57%,
+  hsl(50deg 100% 70%) 56%
+);
+} */

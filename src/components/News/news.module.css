@@ -1,0 +1,41 @@
+.mainContainer {
+	padding: 0 7rem;
+	margin: 0 0 5rem 0;
+}
+
+.newsDataOutput {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-weight: bold;
+}
+.newsContainer {
+	text-align: center;
+	padding: 1rem;
+	margin: 0.5rem;
+	border: 3px solid #ffba52;
+	background-color: #242424;
+	color: #ffffff;
+}
+.content {
+	padding: 1rem 0;
+}
+.header {
+	margin: 1rem 0;
+}
+
+@media (max-width: 425px) {
+	.mainContainer {
+		padding: 0;
+		margin: 0;
+	}
+	.newsDataOutput {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.mainContainer {
+		padding: 0 2rem;
+		margin: 0;
+	}
+}

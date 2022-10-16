@@ -1,0 +1,49 @@
+.ScrollBarWrapper {
+	width: 100%;
+	height: 0.5rem;
+	background-image: linear-gradient(
+		90deg,
+		hsl(0deg 0% 100%) 0%,
+		hsl(0deg 0% 93%) 6%,
+		hsl(0deg 0% 86%) 12%,
+		hsl(0deg 0% 78%) 18%,
+		hsl(0deg 0% 71%) 24%,
+		hsl(120deg 1% 66%) 29%,
+		hsl(120deg 1% 62%) 35%,
+		hsl(120deg 2% 58%) 41%,
+		hsl(120deg 2% 55%) 47%,
+		hsl(106deg 2% 52%) 53%,
+		hsl(78deg 2% 50%) 59%,
+		hsl(49deg 2% 48%) 65%,
+		hsl(21deg 1% 46%) 71%,
+		hsl(0deg 1% 45%) 76%,
+		hsl(0deg 1% 46%) 82%,
+		hsl(0deg 1% 47%) 88%,
+		hsl(0deg 0% 47%) 94%,
+		hsl(0deg 0% 48%) 100%
+	);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.ScrollBarStyle {
+	background-image: linear-gradient(
+		45deg,
+		hsl(0deg 100% 49%) 0%,
+		hsl(25deg 95% 51%) 0%,
+		hsl(32deg 91% 60%) 2%,
+		hsl(39deg 87% 71%) 4%,
+		hsl(49deg 90% 85%) 9%,
+		hsl(48deg 90% 83%) 18%,
+		hsl(41deg 90% 73%) 36%,
+		hsl(36deg 94% 65%) 64%,
+		hsl(32deg 98% 57%) 82%,
+		hsl(24deg 94% 54%) 91%,
+		hsl(8deg 69% 53%) 96%,
+		hsl(352deg 58% 44%) 98%,
+		hsl(339deg 63% 31%) 100%,
+		hsl(327deg 61% 20%) 100%
+	);
+	height: 0.5rem;
+}

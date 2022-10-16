@@ -1,0 +1,112 @@
+.container {
+	background-color: #000000;
+	padding: 10rem 3rem;
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+
+.buttonContainer .signUp {
+	margin: 3rem 0;
+	padding: 1.3rem 9.04rem;
+	font-weight: bolder;
+	background-color: #fff;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.2s;
+	border-radius: 5px;
+}
+
+.buttonContainer .signUp:hover {
+	background: #ffba52;
+	transition: all 0.3s;
+	color: #fff;
+}
+
+.nameContainer .input,
+.emailContainer .input {
+	margin: 0.5rem 0.35rem;
+}
+
+.passwordContainer {
+	margin: 1rem 0 0 0;
+}
+.signUpCard div {
+	padding: 0.75rem 0 0;
+}
+.mainSignUp .h4 {
+	margin: 0.8rem 0 0 0;
+}
+
+.input {
+	height: 3rem;
+	font-size: 1rem;
+	text-align: center;
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+		rgba(240, 46, 170, 0.3) 10px 10px,
+		rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+.input:focus {
+	outline: none;
+}
+.outputContainer {
+	text-align: center;
+	background-color: #000000;
+}
+.outputSuccess {
+	color: rgb(43, 255, 0);
+	font-weight: bold;
+}
+.outputFailure {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+}
+
+@media (max-width: 425px) {
+	.container {
+		padding: 2rem 1rem;
+		margin: 0;
+	}
+
+	.buttonContainer .signUp {
+		padding: 1rem 5.5rem;
+		margin: 3rem 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.buttonContainer .signUp {
+		padding: 1rem 5.5rem;
+	}
+	.signUp,
+	.input {
+		width: 40%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.buttonContainer .signUp {
+		padding: 1rem 5.5rem;
+	}
+	.signUp,
+	.input {
+		width: 30%;
+	}
+	.outputContainer {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.signUp,
+	.input {
+		width: 20%;
+	}
+	.buttonContainer .signUp {
+		padding: 1rem 5.5rem;
+	}
+}

@@ -1,0 +1,48 @@
+.container {
+	text-align: center;
+	background: #000000;
+	color: #ffba52;
+	height: 100vh;
+}
+.error {
+	padding: 18rem 0 0 0;
+	font-size: 3rem;
+}
+.p {
+	margin: 1.2rem 0;
+	font-size: 1.5rem;
+}
+
+.container .signIn {
+	padding: 1rem 6rem;
+	margin: 4rem 0;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid #ffffff;
+	transition: all 0.2s;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.container .signIn:hover {
+	color: #000;
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+	border: 2px solid #ffba52;
+}
+
+@media (min-width: 768px) {
+	.error {
+		font-size: 5rem;
+	}
+
+	.p {
+		font-size: 3rem;
+	}
+}

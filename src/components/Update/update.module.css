@@ -1,0 +1,110 @@
+.updateMainContainer {
+	text-align: center;
+	padding: 5rem;
+	font-weight: bolder;
+}
+.btnContainer {
+	margin: 3rem 0 0 0;
+}
+.btnContainer .button {
+	margin: 0 0 0 1rem;
+	width: 10%;
+}
+.h4 {
+	margin: 0 0 2.5rem 0;
+}
+.button {
+	padding: 0.85rem;
+	font-weight: bolder;
+	background-color: #fff;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	display: inline-block;
+	transition: all 0.2s;
+	border: 2px solid #000000;
+	border-radius: 8px;
+}
+
+.button:hover {
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+	color: #fff;
+	border: 2px solid #ffba52;
+}
+.colOne,
+.colTwo {
+	margin: 1.5rem;
+}
+.colOne .input,
+.colTwo .input {
+	margin: 0.75rem 0 0 0;
+	padding: 1rem 5rem;
+	border-radius: 8px;
+	text-align: center;
+}
+.updateOutput {
+	margin: 4rem 0 0 0;
+	color: #00ff00;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 1.5rem;
+	background-color: #000000;
+	padding: 2.5rem 0;
+}
+.outputFailure {
+	margin: 4rem 0 0 0;
+	color: rgb(255, 0, 0);
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	background-color: #000000;
+	padding: 2.5rem 0;
+}
+
+@media (max-width: 425px) {
+	.updateMainContainer {
+		padding: 0;
+		margin: 2rem 0;
+	}
+
+	.colOne,
+	.colTwo {
+		margin: 0.2rem 1rem;
+	}
+	.colOne .input,
+	.colTwo .input {
+		margin: 0.5rem 0;
+		padding: 1rem 0;
+		width: 100%;
+	}
+	.updateOutput {
+		margin: 2rem 0;
+	}
+	.btnContainer {
+		margin: 2rem 2.5rem;
+	}
+	.btnContainer .button {
+		margin: 1rem;
+		width: 85%;
+	}
+	.button {
+		display: block;
+	}
+}
+@media (min-width: 768px) {
+	.btnContainer .button {
+		margin: 1rem;
+		width: 40%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.btnContainer .button {
+		margin: 1rem;
+		width: 25%;
+	}
+}

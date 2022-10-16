@@ -1,0 +1,143 @@
+.container {
+	background-color: #000000;
+	padding: 10rem 3rem;
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+.signInCard div {
+	padding: 0.75rem 0 0;
+}
+.mainSignIn h4 {
+	margin: 0.8rem 0 0 0;
+}
+.rememberMeContainer {
+	margin: 1rem 0;
+}
+.rememberMeContainer span {
+	padding: 0 0.5rem 0 0.3rem;
+}
+
+.miscContainer {
+	margin: 2rem;
+}
+.miscContainer span {
+	margin: 0.5rem;
+}
+.buttonContainer .signIn {
+	padding: 1rem 9.33rem;
+	font-weight: bolder;
+	background-color: #fff;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.2s;
+	cursor: pointer;
+	border: 2px solid #000000;
+	border-radius: 5px;
+}
+
+.buttonContainer .signIn:hover {
+	background: #ffba52;
+	color: #fff;
+}
+
+.input {
+	height: 3rem;
+	font-size: 1rem;
+	text-align: center;
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+		rgba(240, 46, 170, 0.3) 10px 10px,
+		rgba(240, 46, 170, 0.2) 15px 15px;
+}
+input[type="checkbox"] {
+	accent-color: #ffba52;
+}
+.input:focus {
+	outline: none;
+}
+
+.createAccountLink {
+	padding: 1rem;
+	font-weight: bolder;
+	background-color: #fff;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.2s;
+	border: 2px solid #ec3333;
+	border-radius: 5px;
+}
+
+.createAccountLink:hover {
+	background: #00ff00;
+	background: linear-gradient(
+		to left,
+		#00ff00 0%,
+		#00ffff 100%
+	);
+	color: #fff;
+	border: 2px solid #ffba52;
+}
+
+.outputContainer {
+	text-align: center;
+}
+
+.outputFailure {
+	color: rgb(255, 0, 0);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+@media (max-width: 425px) {
+	.container {
+		padding: 7rem 0;
+		margin: 0;
+	}
+
+	.buttonContainer .signIn {
+		padding: 0.75rem 3rem;
+	}
+	.createAccountLink {
+		padding: 0.5rem 0.75rem;
+	}
+	.miscContainer span {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 7rem 0;
+		margin: 0;
+	}
+
+	.buttonContainer .signIn {
+		padding: 0.75rem 5.5rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		padding: 7rem 0;
+		margin: 0;
+	}
+
+	.buttonContainer .signIn {
+		padding: 1rem 5.75rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	button,
+	.input {
+		width: 20%;
+	}
+	.buttonContainer .signIn {
+		padding: 1rem 5.75rem;
+	}
+}

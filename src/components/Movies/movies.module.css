@@ -1,0 +1,89 @@
+.mainContainer {
+	padding: 0 7rem;
+	margin: 0 0 7.15rem 0;
+}
+.movieContainer {
+	text-align: center;
+	padding: 1rem;
+	margin: 1rem;
+	border: 3px solid #ffba52;
+	background-color: #242424;
+	color: #ffffff;
+}
+
+.movieDataOutput {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-weight: bold;
+}
+.attrLogo {
+	margin: 5rem 0 0 0;
+	display: flex;
+	place-content: center;
+}
+.attrLogo img {
+	width: 5%;
+	height: 100%;
+}
+.attr {
+	padding: 1.5rem 20rem 0 20rem;
+	text-align: center;
+	font-weight: bold;
+	background-image: linear-gradient(
+		to right bottom,
+		#90cea1,
+		#74ccac,
+		#56c8ba,
+		#33c4c8,
+		#00bed6,
+		#00adcf,
+		#009dc6,
+		#198cbb,
+		#1d709b,
+		#1b557c,
+		#163c5d,
+		#0d253f
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.content {
+	padding: 1rem 0;
+}
+.date {
+	color: #6f00ff;
+}
+
+@media (max-width: 425px) {
+	.mainContainer {
+		padding: 0;
+		margin: 0;
+	}
+	.movieDataOutput {
+		display: block;
+	}
+
+	.attrLogo img {
+		width: 20%;
+		height: 100%;
+	}
+	.attr {
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.mainContainer {
+		padding: 0 2rem;
+		margin: 0;
+	}
+	.attrLogo img {
+		width: 10%;
+		height: 100%;
+	}
+	.attr {
+		padding: 0 2rem;
+		margin: 1.5rem 0;
+	}
+}
