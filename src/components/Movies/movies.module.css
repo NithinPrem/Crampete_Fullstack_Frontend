@@ -73,7 +73,25 @@
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 426px) and (max-width: 768px) {
+	.movieDataOutput {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.mainContainer {
+		padding: 0 1rem;
+		margin: 0;
+	}
+	.attrLogo img {
+		width: 20%;
+		height: 100%;
+	}
+	.attr {
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
 	.mainContainer {
 		padding: 0 2rem;
 		margin: 0;
