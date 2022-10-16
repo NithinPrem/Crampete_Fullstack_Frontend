@@ -113,19 +113,6 @@ const SignIn = () => {
 								/>
 							</div>
 
-							<div className={styles.rememberMeContainer}>
-								<input
-									type="checkbox"
-									name=""
-									id="rememberMe"
-								/>
-
-								<label
-									htmlFor="rememberMe"
-									className={styles.rememberMe}>
-									<span>Remember me</span>
-								</label>
-							</div>
 							<div className={styles.buttonContainer}>
 								<button className={styles.signIn}>
 									SIGN IN
