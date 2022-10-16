@@ -13,14 +13,12 @@
 	margin: 0.8rem 0 0 0;
 }
 
-.miscContainer {
-	margin: 2rem;
-}
 .miscContainer span {
 	margin: 0.5rem;
 }
 .buttonContainer .signIn {
 	padding: 1rem 9.33rem;
+	margin: 2.5rem 0 1rem 0;
 	font-weight: bolder;
 	background-color: #fff;
 	color: rgb(0, 0, 0);
