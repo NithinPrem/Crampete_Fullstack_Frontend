@@ -13,6 +13,8 @@ const SignIn = () => {
 		useState("");
 	const [status, setStatus] = useState(false);
 	const [inValidMsg, setInValidMsg] = useState("");
+	const [isCapsLockOn, setIsCapsLockOn] = useState(false);
+
 	const [invalidStatus, setInvalidStatus] = useState(false);
 	const navigate = useNavigate();
 
@@ -54,6 +56,15 @@ const SignIn = () => {
 			setInternalPassword("");
 		}
 	};
+
+	const capslock = (e) => {
+		if (e.getModifierState("CapsLock")) {
+			setIsCapsLockOn(true);
+		} else {
+			setIsCapsLockOn(false);
+		}
+	};
+
 	return (
 		<>
 			<ToastContainer
@@ -110,8 +121,17 @@ const SignIn = () => {
 									onChange={(e) => {
 										setInternalPassword(e.target.value);
 									}}
+									onKeyPress={capslock}
 								/>
 							</div>
+
+							<section className={styles.warningContainer}>
+								{isCapsLockOn && (
+									<div className={styles.warning}>
+										<p>Caps Lock is ON</p>
+									</div>
+								)}
+							</section>
 
 							<div className={styles.buttonContainer}>
 								<button className={styles.signIn}>

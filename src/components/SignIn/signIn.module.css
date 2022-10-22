@@ -39,6 +39,7 @@
 .input {
 	height: 3rem;
 	font-size: 1rem;
+	margin: 0 0 1rem 0;
 	text-align: center;
 	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
 		rgba(240, 46, 170, 0.3) 10px 10px,
@@ -83,6 +84,16 @@ input[type="checkbox"] {
 	color: rgb(255, 0, 0);
 	font-size: 1.2rem;
 	font-weight: bold;
+}
+
+.warningContainer {
+	margin: 0;
+	height: 1rem;
+}
+.warning {
+	color: #fff;
+	font-size: 0.85rem;
+	font-weight: bolder;
 }
 
 @media (max-width: 425px) {

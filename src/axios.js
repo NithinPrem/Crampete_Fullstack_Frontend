@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Axios = axios.create({
-	baseURL: "https://randombackend.vercel.app/api",
+	baseURL: "https://randombackend.onrender.com/api",
 	headers: {
 		Accept: "application/json",
 	},

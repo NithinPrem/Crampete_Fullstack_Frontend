@@ -34,7 +34,6 @@ const DashBoard = () => {
 
 	const [newsData, setNewsData] = useState([]);
 	const [movieData, setMovieData] = useState([]);
-	const [youTubeData, setYouTubeData] = useState([]);
 	const [randomQuote, setRandomQuote] = useState("");
 
 	const logOut = () => {
@@ -58,7 +57,7 @@ const DashBoard = () => {
 
 		const fetchRandomMovies = async () => {
 			const moviesResponse = await Axios.post(
-				`/movieRandom`
+				`/moviesRandom`
 			);
 			const fetchedRandomMovies = await moviesResponse.data;
 			setMovieData(fetchedRandomMovies);
