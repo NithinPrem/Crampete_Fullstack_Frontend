@@ -1,51 +1,82 @@
 .mainContainer {
-	padding: 0 7rem;
-	margin: 0 0 7.15rem 0;
+	padding: 0 2.5rem;
+	margin: 0 0 5rem 0;
 }
 .youTubeContainer {
 	text-align: center;
 	padding: 1rem;
-	margin: 0.5rem;
 	border: 3px solid #ffba52;
-	background-color: #242424;
+	background-color: #000000;
 	color: #ffffff;
+	border-radius: 0.85rem;
 }
 
 .youtubeDataOutput {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
 	font-weight: bold;
+}
+.header {
+	margin: 1rem 0;
 }
 
 .player {
 	margin: 1rem 0;
+	padding: 0.3rem;
+	filter: drop-shadow(0px 0px 5px#ffba52);
 }
 .content {
 	padding: 1rem 0;
 }
-.snippetTitle {
-	color: #6f00ff;
-}
-@media (max-width: 425px) {
-	.mainContainer {
-		padding: 0 7rem;
-		margin: 0 0 7.15rem 0;
-	}
+.snippetTitle,
+.desc {
+	color: #ff0000;
 }
 
 @media (max-width: 425px) {
 	.mainContainer {
 		padding: 0;
 		margin: 0;
+		font-size: 0.75rem;
 	}
 	.youtubeDataOutput {
 		display: block;
+	}
+	.player {
+		margin: 0;
+	}
+	.content {
+		font-size: 0.75rem;
+	}
+	.youTubeContainer {
+		margin: 0.3rem;
+	}
+}
+@media (min-width: 426px) and (max-width: 767px) {
+	.mainContainer {
+		padding: 0 0.75rem;
+		margin: 0;
+		font-size: 0.75rem;
+	}
+	.youtubeDataOutput {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.mainContainer {
+		padding: 0 0.75rem;
+		margin: 0;
+		font-size: 0.75rem;
+	}
+	.youtubeDataOutput {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.mainContainer {
-		padding: 0 2rem;
+		padding: 0 0.45rem;
 		margin: 0;
 	}
 }

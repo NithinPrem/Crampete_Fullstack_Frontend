@@ -56,15 +56,27 @@ const Movies = () => {
 							<div
 								className={styles.movieContainer}
 								key={movie.id}>
-								<h3>{movie.title}</h3>
+								<div className={styles.header}>
+									<h3>{movie.title}</h3>
+								</div>
 								<div className={styles.content}>
-									<img
-										src={`${apiImageUrl}${movie.poster_path}`}
-										alt={movie.Plot}
-										className={styles.moviePoster}
-									/>
+									<a
+										href={`https://www.google.com/search?q=${movie.title}`}
+										target="_blank"
+										rel="noreferrer">
+										<img
+											src={`${apiImageUrl}${movie.poster_path}`}
+											alt={movie.Plot}
+											className={styles.moviePoster}
+										/>
+									</a>
 									<br />
-									<p>Synopsis : {movie.overview}</p>
+									<p className={styles.overview}>
+										<span className={styles.synopsis}>
+											Synopsis :{" "}
+										</span>
+										{movie.overview}
+									</p>
 									<br />
 									<p className={styles.date}>
 										Release Date : {movie.release_date}

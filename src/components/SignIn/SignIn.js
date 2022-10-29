@@ -121,7 +121,7 @@ const SignIn = () => {
 									onChange={(e) => {
 										setInternalPassword(e.target.value);
 									}}
-									onKeyPress={capslock}
+									onKeyUp={capslock}
 								/>
 							</div>
 

@@ -9,6 +9,7 @@ const Update = () => {
 		useState("");
 	const [confirmPassword, setConfirmPassword] =
 		useState("");
+	const [isCapsLockOn, setIsCapsLockOn] = useState(false);
 
 	const [updateMsg, setUpdateMsg] = useState("");
 	const [errorMsg, setErrorMsg] = useState("");
@@ -19,6 +20,13 @@ const Update = () => {
 	const navigate = useNavigate();
 	const handleNavigate = () => {
 		navigate("/dashBoard/profile");
+	};
+	const capslock = (e) => {
+		if (e.getModifierState("CapsLock")) {
+			setIsCapsLockOn(true);
+		} else {
+			setIsCapsLockOn(false);
+		}
 	};
 
 	const handleUpdate = async () => {
@@ -61,7 +69,6 @@ const Update = () => {
 				<div className={styles.updateContainer}>
 					<div className={styles.colOne}>
 						<p>New Password</p>
-
 						<input
 							type="password"
 							name=""
@@ -72,6 +79,7 @@ const Update = () => {
 							onChange={(e) => {
 								setUpdatedPassword(e.target.value);
 							}}
+							onKeyUp={capslock}
 						/>
 					</div>
 					<div className={styles.colTwo}>
@@ -85,7 +93,16 @@ const Update = () => {
 							onChange={(e) => {
 								setConfirmPassword(e.target.value);
 							}}
+							onKeyUp={capslock}
 						/>
+
+						<section className={styles.warningContainer}>
+							{isCapsLockOn && (
+								<div className={styles.warning}>
+									<p>Caps Lock is ON</p>
+								</div>
+							)}
+						</section>
 					</div>
 				</div>
 				<div>

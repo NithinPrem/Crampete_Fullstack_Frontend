@@ -70,12 +70,12 @@ const News = () => {
 									<img
 										src={news.urlToImage}
 										alt={news.title}
-										className={styles.newsImg}
+										className={styles.newsPoster}
 									/>
 								</a>
 
 								<div className={styles.content}>
-									<p> Description : {news.description}</p>
+									<p>{news.description}</p>
 								</div>
 							</div>
 						);

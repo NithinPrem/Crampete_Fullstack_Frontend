@@ -65,6 +65,16 @@
 	padding: 2.5rem 0;
 }
 
+.warningContainer {
+	margin: 1rem 0;
+	height: 1rem;
+}
+.warning {
+	color: rgb(255, 0, 0);
+	font-size: 0.85rem;
+	font-weight: bolder;
+}
+
 @media (max-width: 425px) {
 	.updateMainContainer {
 		padding: 0;

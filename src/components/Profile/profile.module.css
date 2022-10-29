@@ -25,6 +25,7 @@
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 0 5rem 0 20rem;
+	gap: 1rem;
 }
 
 .formContainer .input {
@@ -38,7 +39,6 @@
 	justify-content: center;
 	align-items: center;
 	margin: 2rem 0;
-	gap: 1rem;
 }
 
 .btnContainer {
@@ -145,7 +145,7 @@
 	.updateContainer,
 	.deactivateContainer {
 		margin: 1rem;
-		padding: 1rem;
+		padding: 0 2rem 0 8.5rem;
 		font-size: 1rem;
 	}
 }
@@ -157,5 +157,11 @@
 
 	.rowTwo {
 		margin: 0 9rem;
+	}
+	.updateContainer,
+	.deactivateContainer {
+		margin: 1rem;
+		padding: 0 2rem 0 8.5rem;
+		font-size: 1rem;
 	}
 }

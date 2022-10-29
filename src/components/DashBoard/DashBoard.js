@@ -148,7 +148,6 @@ const DashBoard = () => {
 						</Link>
 					</ul>
 				</nav>
-
 				<Link
 					to="/"
 					className={styles.navbarRight}
@@ -184,7 +183,7 @@ const DashBoard = () => {
 						)}
 						<div className={styles.pContent}>
 							<p>
-								Welcome to RaNdOm &nbsp;
+								Welcome to RaNdOm :&nbsp;
 								<strong className={styles.strong}>
 									{`${stateData?.user?.firstName} ${stateData?.user?.lastName}`}
 								</strong>
@@ -212,7 +211,7 @@ const DashBoard = () => {
 									</div>
 
 									<div className={styles.content}>
-										<p> Description : {news.description}</p>
+										<p>{news.description}</p>
 										<br />
 									</div>
 									<a
@@ -222,6 +221,7 @@ const DashBoard = () => {
 										<img
 											src={news.urlToImage}
 											alt={news.title}
+											className={styles.newsPoster}
 										/>
 									</a>
 								</div>
@@ -235,16 +235,26 @@ const DashBoard = () => {
 								<div
 									className={styles.movieContainer}
 									key={movie.id}>
-									<h3>{movie.title}</h3>
+									<div className={styles.header}>
+										<h3>{movie.title}</h3>
+									</div>
 									<div className={styles.content}>
-										<img
-											src={`${apiImageUrl}${movie.poster_path}`}
-											alt={movie.Plot}
-											className={styles.moviePoster}
-										/>
+										<a
+											href={`https://www.google.com/search?q=${movie.title}`}
+											target="_blank"
+											rel="noreferrer">
+											<img
+												src={`${apiImageUrl}${movie.poster_path}`}
+												alt={movie.Plot}
+												className={styles.moviePoster}
+											/>
+										</a>
 										<br />
 										<p className={styles.overview}>
-											Synopsis : {movie.overview}
+											<span className={styles.synopsis}>
+												Synopsis :{" "}
+											</span>
+											{movie.overview}
 										</p>
 										<br />
 										<p className={styles.date}>
@@ -255,7 +265,6 @@ const DashBoard = () => {
 							);
 						})}
 					</div>
-					);
 				</>
 			)}
 			<Outlet />

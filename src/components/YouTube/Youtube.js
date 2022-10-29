@@ -58,7 +58,9 @@ const Youtube = () => {
 							<div
 								className={styles.youTubeContainer}
 								key={item.etag}>
-								<h5>{item.snippet.title}</h5>
+								<div className={styles.header}>
+									<h3>{item.snippet.title}</h3>
+								</div>
 								<ReactPlayer
 									url={`https://www.youtube.com/watch?v=${item.id.videoId}`}
 									controls
@@ -67,7 +69,10 @@ const Youtube = () => {
 								/>
 								<div className={styles.content}>
 									<p>
-										Description : {item.snippet.description}
+										<span className={styles.desc}>
+											Description :{" "}
+										</span>{" "}
+										{item.snippet.description}
 									</p>
 								</div>
 								<p className={styles.snippetTitle}>
