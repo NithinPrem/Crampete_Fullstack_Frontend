@@ -70,14 +70,12 @@ const Movies = () => {
 											className={styles.moviePoster}
 										/>
 									</a>
-									<br />
 									<p className={styles.overview}>
 										<span className={styles.synopsis}>
 											Synopsis :{" "}
 										</span>
 										{movie.overview}
 									</p>
-									<br />
 									<p className={styles.date}>
 										Release Date : {movie.release_date}
 									</p>

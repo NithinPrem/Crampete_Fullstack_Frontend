@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Axios from "../../axios";
-// import { Triangle } from "react-loader-spinner";
 import { GiNewspaper } from "react-icons/gi";
+import Axios from "../../axios";
 import Paginate from "../Pagination/Paginate";
 import SearchBar from "../SearchBar/SearchBar";
 import styles from "./news.module.css";
@@ -9,8 +8,6 @@ import styles from "./news.module.css";
 const News = () => {
 	const [newsSearch, setNewsSearch] = useState([]);
 	const [search, setSearch] = useState("");
-
-	const [isLoading, setIsLoading] = useState(false);
 
 	const [currentPage, setCurrentPage] = useState(1);
 	const [postsPerPage, setPostsPerPage] = useState(10);
@@ -29,7 +26,6 @@ const News = () => {
 			params: { search },
 		}).then((res) => {
 			setNewsSearch(res.data);
-			setIsLoading(true);
 		});
 
 		setSearch("");
@@ -62,7 +58,6 @@ const News = () => {
 								<div className={styles.header}>
 									<h3>{news.title}</h3>
 								</div>
-
 								<a
 									href={news.url}
 									target="_blank"

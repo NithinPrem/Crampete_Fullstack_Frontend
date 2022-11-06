@@ -13,9 +13,9 @@ const SearchBar = ({
 		<>
 			<div className={styles.topContainer}>
 				{icon}
-				<h1>{header}</h1>
+				<h1 className={styles.header}>{header}</h1>
 				<br />
-				<p>{pdata}</p>
+				<p className={styles.para}>{pdata}</p>
 				<form
 					className={styles.form}
 					onSubmit={handleSubmit}>

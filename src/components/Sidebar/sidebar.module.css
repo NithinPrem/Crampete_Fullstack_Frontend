@@ -1,5 +1,5 @@
 .isActive {
-	background-color: rgba(0, 0, 0, 0.788);
+	background-color: #000000ee;
 	color: #fff;
 	position: fixed;
 	top: 0;
@@ -11,7 +11,7 @@
 }
 
 .isClosed {
-	background-color: rgba(0, 0, 0, 0.788);
+	background-color: #000000ee;
 	color: #fff;
 	position: fixed;
 	top: 0;
@@ -33,7 +33,7 @@
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 	border-top: 3px solid #ffba52;
-	border-bottom: 3px solid #ffba52;
+	font-weight: bolder;
 }
 
 .navContainer .ul {
@@ -46,7 +46,7 @@
 .navContainer .li {
 	text-decoration: none;
 	color: #fff;
-	margin: 2.5rem 0;
+	margin: 1.5rem 0;
 }
 
 .navContainer .li:hover,
@@ -65,7 +65,7 @@
 }
 .SidebarClose {
 	position: absolute;
-	top: 9%;
+	top: 2%;
 	right: 5%;
 	font-size: 2.5rem;
 	cursor: pointer;
@@ -93,10 +93,17 @@
 
 @media (max-width: 768px) {
 	.navContainer {
-		padding: 0.7rem 2.5rem;
+		padding: 0 2rem;
+		margin: 4.5rem 0;
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+	.navContainer {
+		padding: 0 2rem;
+		margin: 4.5rem 0;
+	}
+}
 @media (min-width: 1024px) {
 	.navContainer {
 		display: none;

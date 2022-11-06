@@ -6,8 +6,11 @@
 .newsDataOutput {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	font-weight: bold;
-	gap: 1rem;
+	gap: 0.5rem;
+}
+
+.content {
+	overflow: hidden;
 }
 .newsContainer {
 	text-align: center;
@@ -41,19 +44,39 @@
 	}
 }
 
-@media (min-width: 426px) and (max-width: 1023px) {
-	.mainContainer {
-		padding: 0;
-		margin: 0;
-	}
+@media (min-width: 426px) and (max-width: 768px) {
 	.newsDataOutput {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(35%, 1fr)
+		);
 		font-size: 0.75rem;
 	}
+	.mainContainer {
+		padding: 0 0.75rem;
+		margin: 0;
+	}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
 	.mainContainer {
 		padding: 0 2rem;
 		margin: 0;
+		font-size: 0.85rem;
+	}
+	.newsDataOutput {
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(30%, 1fr)
+		);
+		font-size: 0.75rem;
+	}
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+	.newsDataOutput {
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(25%, 1fr)
+		);
+		font-size: 0.75rem;
 	}
 }

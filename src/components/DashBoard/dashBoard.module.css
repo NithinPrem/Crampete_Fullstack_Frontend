@@ -18,8 +18,8 @@
 }
 .menuGrid {
 	position: absolute;
-	top: 7%;
-	left: 2%;
+	top: 55px;
+	left: 16px;
 	font-size: 5rem;
 	cursor: pointer;
 }
@@ -93,13 +93,13 @@
 .contentContainer {
 	margin: 5rem 0;
 	text-align: center;
-	font-size: 1.5rem;
 }
 .contentContainer p {
 	margin: 2rem 0;
 }
 .pContent {
-	font-weight: 600;
+	font-weight: bold;
+	font-size: 1.3rem;
 }
 
 .homeContainer {
@@ -112,7 +112,7 @@
 .h2 {
 	text-align: center;
 	margin: 4rem 0;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	color: #fff;
 	padding: 0.5rem 0;
 	background-image: linear-gradient(
@@ -138,7 +138,7 @@
 	text-transform: uppercase;
 	color: red;
 	display: block;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .quotesContainer {
@@ -146,7 +146,7 @@
 	aspect-ratio: 25/1;
 }
 .quote {
-	font-weight: bolder;
+	font-weight: bold;
 	font-size: 1.3rem;
 }
 .synopsis,
@@ -225,18 +225,24 @@
 	.navbarLeft,
 	.contentContainer,
 	.contentContainer p,
-	.h2,
 	.header {
 		padding: 0.5rem 0.75rem;
 		margin: 0.85rem 0;
 		display: block;
-		font-size: 0.75rem;
+		font-size: 0.85rem;
+	}
+
+	.h2 {
+		font-size: 1.3rem;
+		padding: 0.5rem 0.75rem;
+		margin: 0.85rem 0;
+		display: block;
 	}
 	.footer {
-		padding: 0.5rem 0.75rem 0 0.75rem;
+		padding: 1.5rem 0.75rem;
 		margin: 0.85rem 0 0 0;
 		display: block;
-		font-size: 0.95rem;
+		font-size: 0.85rem;
 	}
 
 	.quotesContainer {
@@ -255,7 +261,7 @@
 		display: none;
 	}
 	.quote {
-		font-size: 0.5rem;
+		font-size: 0.9rem;
 	}
 	.content p {
 		display: none;
@@ -263,8 +269,8 @@
 
 	.menuGrid {
 		position: absolute;
-		top: 4.4%;
-		left: 2%;
+		top: 38px;
+		left: 5px;
 		font-size: 2.5rem;
 	}
 }
@@ -283,9 +289,15 @@
 	.navbarLeft,
 	.contentContainer,
 	.contentContainer p,
-	.h2,
 	.header {
 		font-size: 1rem;
+	}
+
+	.h2 {
+		font-size: 1.5rem;
+		padding: 0.5rem 0.75rem;
+		margin: 0.85rem 0;
+		display: block;
 	}
 	.headerContainer {
 		font-size: 3rem;
@@ -296,14 +308,17 @@
 		display: block;
 		aspect-ratio: 0;
 	}
+	.quote {
+		font-size: 1rem;
+	}
 	.navContainer {
 		display: none;
 	}
 
 	.menuGrid {
 		position: absolute;
-		top: 7%;
-		left: 2%;
+		top: 58px;
+		left: 16px;
 		font-size: 3.5rem;
 	}
 
@@ -324,6 +339,11 @@
 	}
 	.navContainer {
 		display: none;
+	}
+	.menuGrid {
+		position: absolute;
+		top: 70px;
+		left: 16px;
 	}
 }
 @media (min-width: 769px) and (max-width: 1024px) {

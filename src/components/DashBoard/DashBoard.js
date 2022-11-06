@@ -88,7 +88,6 @@ const DashBoard = () => {
 				sidebarHandler={sidebarHandler}
 				logOut={logOut}
 			/>
-
 			<header className={styles.headerContainer}>
 				RaNdOm
 			</header>
@@ -163,9 +162,9 @@ const DashBoard = () => {
 							<div className={styles.quotesContainer}>
 								<div className={styles.quote}>
 									<FaQuoteLeft />
-									&nbsp;
+									&nbsp;&nbsp;
 									{randomQuote}
-									&nbsp;
+									&nbsp; &nbsp;
 									<FaQuoteRight />
 								</div>
 							</div>

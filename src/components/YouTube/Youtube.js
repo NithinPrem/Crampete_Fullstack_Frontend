@@ -16,21 +16,26 @@ const Youtube = () => {
 	const lastIndex = currentPage * postsPerPage;
 	const firstIndex = lastIndex - postsPerPage;
 
+	const youtubeAbort = new AbortController();
+
 	const currentPost = youtubeSearch.slice(
 		firstIndex,
 		lastIndex
 	);
 
-	// const [isLoading, setIsLoading] = useState(false);
-
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		Axios.get("/youtubeSearch", {
-			params: { search },
-		}).then((res) => {
+		Axios.get(
+			"/youtubeSearch",
+			{
+				params: { search },
+			},
+			{
+				signal: youtubeAbort.signal,
+			}
+		).then((res) => {
 			setYoutubeSearch(res.data.items);
-			// setIsLoading(true);
 		});
 
 		setSearch("");
@@ -51,6 +56,7 @@ const Youtube = () => {
 				setSearch={setSearch}
 				handleSubmit={handleSubmit}
 			/>
+
 			<div className={styles.mainContainer}>
 				<div className={styles.youtubeDataOutput}>
 					{currentPost.map((item) => {
@@ -83,6 +89,7 @@ const Youtube = () => {
 					})}
 				</div>
 			</div>
+
 			<Paginate
 				totalPosts={youtubeSearch.length}
 				postsPerPage={postsPerPage}

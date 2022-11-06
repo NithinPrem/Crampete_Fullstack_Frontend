@@ -4,9 +4,6 @@
 }
 
 .imgContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: 2rem 0;
 }
 
@@ -39,6 +36,7 @@
 	justify-content: center;
 	align-items: center;
 	margin: 2rem 0;
+	gap: 1rem;
 }
 
 .btnContainer {
@@ -87,6 +85,9 @@
 		margin: 1.5rem 0;
 		display: block;
 	}
+	.H1top {
+		font-size: 1.2rem;
+	}
 
 	.colTwo {
 		margin: 1rem;
@@ -113,16 +114,16 @@
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-	.rowOne,
-	.rowTwo {
-		margin: 1rem;
-	}
 	.updateContainer,
-	.rowOne,
 	.deactivateContainer {
 		margin: 1rem;
 		padding: 1rem;
 		display: block;
+	}
+	.rowOne,
+	.rowTwo {
+		display: block;
+		margin: 1.5rem 0;
 	}
 	.colTwo {
 		margin: 1rem;
@@ -137,9 +138,8 @@
 	}
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-	.rowOne,
-	.rowTwo {
-		margin: 1rem;
+	.rowOne {
+		margin: 2rem 0;
 	}
 
 	.updateContainer,
@@ -152,11 +152,11 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 	.rowOne {
-		margin: 1rem;
+		margin: 2rem 0;
 	}
 
 	.rowTwo {
-		margin: 0 9rem;
+		margin: 0 auto;
 	}
 	.updateContainer,
 	.deactivateContainer {

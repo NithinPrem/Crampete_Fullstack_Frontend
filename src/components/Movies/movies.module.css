@@ -8,7 +8,7 @@
 	border: 3px solid #ffba52;
 	background-color: #000000;
 	color: #ffffff;
-	border-radius: 0.85rem;
+	border-radius: 0.5rem;
 }
 .header {
 	margin: 1rem 0;
@@ -20,7 +20,6 @@
 .date {
 	color: #ff2c2c;
 	font-weight: bold;
-	text-transform: uppercase;
 }
 .overview {
 	margin: 1.5rem;
@@ -28,8 +27,7 @@
 .movieDataOutput {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	font-weight: bold;
-	gap: 1rem;
+	gap: 0.85rem;
 }
 .attrLogo {
 	margin: 5rem 0 0 0;
@@ -69,6 +67,7 @@
 @media (max-width: 425px) {
 	.mainContainer {
 		padding: 0;
+		margin: 0;
 	}
 	.movieDataOutput {
 		display: block;
@@ -94,7 +93,7 @@
 		font-size: 0.75rem;
 	}
 	.mainContainer {
-		padding: 0 1rem;
+		padding: 0 0.75rem;
 		margin: 0;
 	}
 	.attrLogo img {
@@ -111,6 +110,7 @@
 	.mainContainer {
 		padding: 0 2rem;
 		margin: 0;
+		font-size: 0.85rem;
 	}
 	.attrLogo img {
 		width: 10%;

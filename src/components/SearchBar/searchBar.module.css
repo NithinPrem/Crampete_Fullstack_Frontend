@@ -8,7 +8,9 @@
 }
 .topContainer .search {
 	margin: 0.5rem;
-	font-size: 2rem;
+	width: 43rem;
+	height: 3rem;
+	font-size: 1.2rem;
 	border-radius: 7px;
 	text-indent: 0.55rem;
 }
@@ -16,7 +18,8 @@
 	margin: 1rem;
 }
 .searchButton {
-	padding: 0.85rem;
+	padding: 0.75rem;
+	margin: 1rem 0;
 	font-weight: bolder;
 	background-color: #fff;
 	color: rgb(0, 0, 0);
@@ -41,27 +44,43 @@
 @media (max-width: 425px) {
 	.topContainer .search {
 		margin: 0;
+		width: 100%;
 		font-size: 1rem;
+		height: 2.5rem;
 	}
 	.searchButton {
 		padding: 0.5rem 0;
-		width: 30%;
+		width: 45%;
+	}
+	.header {
+		font-size: 1.35rem;
+	}
+	.para {
+		font-size: 0.8rem;
+		padding: 0 1rem;
 	}
 }
 
 @media (min-width: 426px) and (max-width: 767px) {
 	.topContainer .search {
 		margin: 0;
-		font-size: 1.5rem;
+		width: 100%;
 	}
 	.searchButton {
 		padding: 0.85rem 0;
-		width: 40%;
+		width: 30%;
+	}
+	.para {
+		font-size: 0.8rem;
+		padding: 0 1rem;
 	}
 }
 @media (min-width: 768px) {
 	.searchButton {
 		width: 20%;
+	}
+	.topContainer .search {
+		margin: 0;
 	}
 }
 @media (min-width: 992px) {

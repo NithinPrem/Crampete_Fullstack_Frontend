@@ -2,10 +2,11 @@
 	text-align: center;
 	background: #000000;
 	color: #ffba52;
-	height: 100vh;
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
 }
 .error {
-	padding: 18rem 0 0 0;
 	font-size: 3rem;
 }
 .p {
@@ -14,8 +15,8 @@
 }
 
 .container .signIn {
-	padding: 1rem 6rem;
-	margin: 4rem 0;
+	padding: 0.5rem 3rem;
+	margin: 2.5rem auto;
 	font-weight: bolder;
 	text-align: center;
 	text-decoration: none;
@@ -44,5 +45,10 @@
 
 	.p {
 		font-size: 3rem;
+	}
+
+	.container .signIn {
+		padding: 1rem 6rem;
+		margin: 4rem auto;
 	}
 }

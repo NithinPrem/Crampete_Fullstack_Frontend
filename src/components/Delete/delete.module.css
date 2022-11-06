@@ -1,7 +1,6 @@
 .content {
 	margin: 3rem 0 0 0;
 	padding: 0 25rem;
-	font-size: 1.1rem;
 	font-weight: bold;
 	font-style: italic;
 	text-align: center;
@@ -15,12 +14,14 @@
 }
 .alert {
 	color: #f8a426;
+	padding: 0 1rem;
 }
 .btnContainer {
 	margin: 2.5rem 0 0 0;
 }
 .btnContainer .button {
 	margin: 0 0 0 1rem;
+	width: 15%;
 }
 .button {
 	padding: 0.85rem;
@@ -62,12 +63,9 @@
 		padding: 3rem 0 0 0;
 	}
 
-	.btnContainer {
-		margin: 2.5rem 0 0 0;
-	}
 	.btnContainer .button {
-		margin: 1rem 1.5rem;
-		width: 85%;
+		margin: 1rem;
+		width: 90%;
 		display: block;
 	}
 
@@ -88,10 +86,10 @@
 	.btnContainer {
 		margin: 2.5rem 0 0 0;
 	}
+
 	.btnContainer .button {
-		margin: 1rem 12rem;
-		width: 50%;
-		display: block;
+		margin: 1rem;
+		width: 40%;
 	}
 }
 
@@ -108,8 +106,14 @@
 	.btnContainer {
 		margin: 2.5rem 0 0 0;
 	}
+
 	.btnContainer .button {
 		margin: 1rem;
 		width: 30%;
+	}
+}
+@media (min-width: 1440px) {
+	.content {
+		font-size: 1.1rem;
 	}
 }
