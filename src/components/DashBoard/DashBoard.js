@@ -188,7 +188,7 @@ const DashBoard = () => {
 								</strong>
 							</p>
 							<p>
-								Random is a place where you van explore all
+								Random is a place where you can explore all
 								things NEWS, FOOD & YOUTUBE.
 							</p>
 							<p>
