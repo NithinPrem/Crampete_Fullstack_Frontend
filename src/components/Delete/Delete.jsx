@@ -45,52 +45,32 @@ const Delete = () => {
 		<>
 			<div className={styles.content}>
 				<p>
-					When you delete your account, your Profile will be
-					permanently removed. After your account has been
-					deleted, you can sign up again with the same
-					username as long as it hasn't been taken by a new
-					person on RaNdOm. Bear in mind that if your
-					account has been removed for violating Usage
-					Guidelines, you may not be able to sign up again
-					with the same username.
+					When you delete your account, your Profile will be permanently removed. After your account has been deleted, you can sign up again
+					with the same email as long as it hasn't been taken by a new person on RaNdOm. Bear in mind that if your account has been removed
+					for violating Usage Guidelines, you may not be able to sign up again with the same email.
 				</p>
 				<br />
 				<p>
-					For security reasons, we can't delete an account
-					for you. You'll need to be able to log in to your
-					account to request deletion. After your account
-					has been deleted, you will not have access to
-					RaNdOm's Data.
+					For security reasons, we can't delete an account for you. You'll need to be able to log in to your account to request deletion.
+					After your account has been deleted, you will not have access to RaNdOm's Data.
 				</p>
 			</div>
 			<div className={styles.updateMainContainer}>
-				<h2 className={styles.alert}>
-					Are You Sure You Want To Delete Your Account?
-				</h2>
+				<h2 className={styles.alert}>Are You Sure You Want To Delete Your Account?</h2>
 
 				<div>
 					<div className={styles.btnContainer}>
-						<button
-							className={styles.button}
-							type="submit"
-							onClick={handleNavigate}>
+						<button className={styles.button} type="submit" onClick={handleNavigate}>
 							NO
 						</button>
 
-						<button
-							className={styles.button}
-							type="submit"
-							onClick={handleDelete}>
+						<button className={styles.button} type="submit" onClick={handleDelete}>
 							YES
 						</button>
 					</div>
 				</div>
 			</div>
-			{deleteStatus ? (
-				<div className={styles.deleteOutput}>
-					{deleteMsg} Thank You for Using RaNdOm.
-				</div>
-			) : null}
+			{deleteStatus ? <div className={styles.deleteOutput}>{deleteMsg} Thank You for Using RaNdOm.</div> : null}
 		</>
 	);
 };

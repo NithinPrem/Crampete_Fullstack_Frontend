@@ -9,8 +9,7 @@ import styles from "./signIn.module.css";
 
 const SignIn = () => {
 	const [internalEmail, setInternalEmail] = useState("");
-	const [internalPassword, setInternalPassword] =
-		useState("");
+	const [internalPassword, setInternalPassword] = useState("");
 	const [status, setStatus] = useState(false);
 	const [inValidMsg, setInValidMsg] = useState("");
 	const [isCapsLockOn, setIsCapsLockOn] = useState(false);
@@ -86,7 +85,7 @@ const SignIn = () => {
 				<div className={styles.signInCard}>
 					<div className={styles.mainSignIn}>
 						<h2>SIGN IN</h2>
-						<h4>Login Using Your Username and Password.</h4>
+						<h4>Login Using Your Email and Password.</h4>
 					</div>
 					<div className={styles.signInForm}>
 						<form onSubmit={signInHandler}>
@@ -134,29 +133,21 @@ const SignIn = () => {
 							</section>
 
 							<div className={styles.buttonContainer}>
-								<button className={styles.signIn}>
-									SIGN IN
-								</button>
+								<button className={styles.signIn}>SIGN IN</button>
 							</div>
 
 							<div className={styles.miscContainer}>
 								<span>Not registered ?</span>
 
 								<span>
-									<Link
-										to="/signUp"
-										className={styles.createAccountLink}>
+									<Link to="/signUp" className={styles.createAccountLink}>
 										Create Account
 									</Link>
 								</span>
 							</div>
 						</form>
 						<div className={styles.outputContainer}>
-							{invalidStatus !== 200 && (
-								<div className={styles.outputFailure}>
-									{inValidMsg}
-								</div>
-							)}
+							{invalidStatus !== 200 && <div className={styles.outputFailure}>{inValidMsg}</div>}
 						</div>
 					</div>
 				</div>

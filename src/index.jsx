@@ -12,11 +12,9 @@ import "./index.css";
 
 export let persistor = persistStore(store);
 
-const root = ReactDOM.createRoot(
-	document.getElementById("root")
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-if (process.env.NODE_ENV === "production") {
+if (import.meta.env.PROD) {
 	disableReactDevTools();
 }
 root.render(
@@ -30,5 +28,5 @@ root.render(
 				</PersistGate>
 			</Provider>
 		</React.StrictMode>
-	</>
+	</>,
 );

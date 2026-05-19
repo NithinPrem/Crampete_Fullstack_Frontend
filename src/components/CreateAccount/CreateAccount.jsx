@@ -6,13 +6,12 @@ import styles from "./createAccount.module.css";
 const CreateAccount = () => {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
-	const [userName, setUserName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [msg, setMsg] = useState("");
 	const [status, setStatus] = useState(false);
 	const [inValidMsg, setInValidMsg] = useState("");
-	const [invalidStatus, setInvalidStatus] = useState(false);
+	const [invalidStatus, setInvalidStatus] = useState(null);
 
 	const navigate = useNavigate();
 
@@ -23,7 +22,6 @@ const CreateAccount = () => {
 			const result = await Axios.post("/signup", {
 				firstName,
 				lastName,
-				userName,
 				email,
 				password,
 			});
@@ -35,7 +33,6 @@ const CreateAccount = () => {
 
 			setFirstName("");
 			setLastName("");
-			setUserName("");
 			setEmail("");
 			setPassword("");
 			setInValidMsg("");
@@ -50,7 +47,6 @@ const CreateAccount = () => {
 			setInvalidStatus(invalidStatus);
 			setFirstName("");
 			setLastName("");
-			setUserName("");
 			setEmail("");
 			setPassword("");
 			setMsg("");
@@ -63,10 +59,7 @@ const CreateAccount = () => {
 				<div className={styles.mainSignUp}>
 					<h2>CREATE YOUR ACCOUNT</h2>
 					<h4 className={styles.h4}>NEW HERE ?</h4>
-					<h4 className={styles.h4}>
-						SIGN UP & DISCOVER THE GREAT AMOUNT OF
-						RANDOMNESS.
-					</h4>
+					<h4 className={styles.h4}>SIGN UP & DISCOVER THE GREAT AMOUNT OF RANDOMNESS.</h4>
 				</div>
 				<div className={styles.signInForm}>
 					<form onSubmit={signUpHandler}>
@@ -134,9 +127,7 @@ const CreateAccount = () => {
 						</div>
 
 						<div className={styles.buttonContainer}>
-							<button
-								type="submit"
-								className={styles.signUp}>
+							<button type="submit" className={styles.signUp}>
 								SIGN UP
 							</button>
 						</div>
@@ -144,17 +135,8 @@ const CreateAccount = () => {
 				</div>
 
 				<div className={styles.outputContainer}>
-					{status === 200 && (
-						<div className={styles.outputSuccess}>
-							{msg}
-						</div>
-					)}
-
-					{invalidStatus !== 200 && (
-						<div className={styles.outputFailure}>
-							{inValidMsg}
-						</div>
-					)}
+					{status === 201 && <div className={styles.outputSuccess}>{msg}</div>}
+					{invalidStatus && invalidStatus !== 201 && <div className={styles.outputFailure}>{inValidMsg}</div>}
 				</div>
 			</div>
 		</div>
